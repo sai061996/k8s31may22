@@ -3,18 +3,18 @@ kind: ReplicationController
 metadata:
   name: mynginx-rc
 spec:  
-  replicase: 3
+  replicas: 3
   selector:
     app: mynginx
   template: 
     metadata:
-      labels: 
-         app: myngins
+       labels: 
+          app: myngins
     spec:
-       containers:
-       - name: mynginx-container
-         image: nginx
-         ports:
+      containers:
+      - name: mynginx-container
+        image: nginx
+        ports:
          - containerPort: 8080
 
 
