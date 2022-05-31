@@ -9,7 +9,7 @@ spec:
   template: 
     metadata:
        labels: 
-          app: myngins
+          app: mynginx
     spec:
       containers:
       - name: mynginx-container
